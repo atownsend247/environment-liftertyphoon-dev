@@ -1,0 +1,28 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIICyDCCAbCgAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl
+    cm5ldGVzMB4XDTE5MDMyMTIwNDUzN1oXDTI5MDMxODIwNDUzN1owFTETMBEGA1UE
+    AxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPS+
+    Zk7hKPrUf1SF8KTYFU2V7ZGyhrsH0796/SerZgkzTrDg1Zhcjivv12amlmzAWKgl
+    MXpQl6qT3mz1NEMSxF+3uvSYXEhYzgX19UOYdLmqFKVZAdwwstRZk7uNru6r1N5y
+    g1quWtJstxqg7qDrFXPy4f3ZTNqJxTUZ7oA59ze8X9YtHhCmfLklXAO9sR9ayhzk
+    Ef9I1j1z26k0Z3KvVXvOXzQDtPvIyPXUIakAdpyXKbiLm/vW3f2XhqPOSF0jwroC
+    hqPoxR4Ek1fxWC+lXV/G/m0nPEi7bDC8Y4M0VBoKUU6qhXSNO2A19bdBaRgQyasD
+    0Z5LsAFleVPRn9pOXyMCAwEAAaMjMCEwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB
+    /wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAE1EnpuiXy/3KzpwexdtF6bbHn7p
+    w1b3uvyKsthbqy1bdSNd50px4QLEakkw6GGaDkIM9fjURTUtnGjX1uhk+JjMAjIy
+    Yut/FNHL+RCOUagKaCJfGwk9jMuTHSmjtLZ7sJ1yGxO71y1p+vxeodmmp46QBpPS
+    s7RAj1kJr6Bj4DrLwYmwiN/sGZbLcexKaMM2K3atyBthJ4hcL9W5Yb3lrOcdfmZc
+    0WP+6WkTDvcYS1HZJ8NAF3KzjF4su1fPXVAYDGV7sRGScRh3v0wn0PkP+8HAZFO4
+    c0l6dPX8QAvMDrE0eJ5P2DFkqRKCfX/6He1B9eyux2mq2qSVtbqiaWGqG6U=
+    -----END CERTIFICATE-----
+  jx-install-version: 1.3.1001
+  kubeProvider: kubernetes
+  secretsLocation: fileSystem
+  server: https://192.168.1.177:6443
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
